@@ -1,13 +1,25 @@
 
-exports.seed = function(knex) {
+exports.seed = async knex => {
   // Deletes ALL existing entries
-  return knex('table_name').del()
-    .then(function () {
+  await knex('enrollment').del()
+  await knex('student').del()
+  await knex('course').del()
       // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+      await knex('student').insert([
+        {id: 1, name: 'Sanjeev'},
+        {id: 2, name: 'Anju'},
+        {id: 3, name: 'Anil'}
+      ])
+
+      await knex('course').insert([
+        {id: 1, title: 'Javascript'},
+        {id: 2, title: 'Python'},
+        {id: 3, title: 'Java'}
       ]);
-    });
+
+      await knex('enrollment').insert([
+        {student_id: 1, course_id: 2},
+        {student_id: 2, course_id: 1},
+        {student_id: 3, course_id: 3}
+      ])
 };

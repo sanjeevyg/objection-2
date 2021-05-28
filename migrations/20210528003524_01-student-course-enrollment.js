@@ -11,7 +11,7 @@ exports.up = async knex => {
 
   await knex.schema.createTable('enrollment', table => {
       table.integer('student_id').references('id').inTable('student')
-      table.integer`('course_id').references('id').inTable('course')
+      table.integer('course_id').references('id').inTable('course')
   })
 };
 
