@@ -1,0 +1,38 @@
+2021-05-28 12:11:13.820 CDT [7051] LOG:  starting PostgreSQL 13.3 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2021-05-28 12:11:13.823 CDT [7051] LOG:  listening on IPv6 address "::1", port 5432
+2021-05-28 12:11:13.823 CDT [7051] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-05-28 12:11:13.825 CDT [7051] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-05-28 12:11:13.830 CDT [7052] LOG:  database system was shut down at 2021-05-28 12:11:13 CDT
+2021-05-28 12:11:13.835 CDT [7051] LOG:  database system is ready to accept connections
+2021-05-28 12:11:56.806 CDT [7090] FATAL:  database "test" does not exist
+2021-05-28 12:12:04.754 CDT [7109] FATAL:  database "postgress" does not exist
+2021-05-28 12:12:08.232 CDT [7127] FATAL:  database "sanjeev" does not exist
+2021-05-28 12:12:15.687 CDT [7145] FATAL:  database "init" does not exist
+2021-05-28 12:13:29.328 CDT [7318] FATAL:  database "test" does not exist
+2021-05-28 12:14:39.101 CDT [7504] FATAL:  database "postgress" does not exist
+2021-05-28 12:18:02.290 CDT [7667] FATAL:  database "test" does not exist
+2021-05-28 12:18:08.371 CDT [7686] FATAL:  database "postgress" does not exist
+2021-05-28 12:18:18.615 CDT [7706] FATAL:  database "01-student-course-enrollment" does not exist
+2021-05-28 12:27:11.443 CDT [8286] FATAL:  database "sanjeev" does not exist
+2021-05-28 12:27:55.744 CDT [8305] FATAL:  database "test" does not exist
+2021-05-28 12:28:03.333 CDT [8311] FATAL:  database "postgress" does not exist
+2021-05-28 12:29:00.251 CDT [8334] FATAL:  role "postgres" does not exist
+2021-05-28 12:30:57.947 CDT [8378] FATAL:  database "test" does not exist
+2021-05-28 12:31:03.051 CDT [8383] FATAL:  database "postgress" does not exist
+2021-05-28 12:36:01.068 CDT [8524] FATAL:  role "postgres" does not exist
+2021-05-28 12:36:06.078 CDT [8539] FATAL:  role "postgres" does not exist
+2021-05-28 12:36:14.249 CDT [8558] FATAL:  role "postgres" does not exist
+2021-05-28 12:38:31.261 CDT [8691] ERROR:  syntax error at or near "01" at character 15
+2021-05-28 12:38:31.261 CDT [8691] STATEMENT:  select * from 01-student-course-enrollment;
+2021-05-28 12:38:41.460 CDT [8691] ERROR:  syntax error at or near "01" at character 15
+2021-05-28 12:38:41.460 CDT [8691] STATEMENT:  select * from 01-student-course-enrollment;
+2021-05-28 12:38:53.251 CDT [8691] ERROR:  relation "sanjeev" does not exist at character 15
+2021-05-28 12:38:53.251 CDT [8691] STATEMENT:  select * from sanjeev;
+2021-05-28 12:39:06.533 CDT [8731] FATAL:  database "postgress" does not exist
+2021-05-28 12:39:59.401 CDT [8787] ERROR:  syntax error at or near "01" at character 1
+2021-05-28 12:39:59.401 CDT [8787] STATEMENT:  01-student-course-enrollment
+	select * from 01-student-course-enrollment;
+2021-05-28 12:40:14.358 CDT [8787] ERROR:  relation "sanjeev" does not exist at character 15
+2021-05-28 12:40:14.358 CDT [8787] STATEMENT:  select * from sanjeev;
+2021-05-28 12:50:02.244 CDT [9120] ERROR:  column "title" of relation "student" does not exist at character 30
+2021-05-28 12:50:02.244 CDT [9120] STATEMENT:  insert into "student" ("id", "title") values ($1, $2), ($3, $4), ($5, $6)
